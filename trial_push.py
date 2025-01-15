@@ -1,0 +1,3 @@
+#abiselamabi
+
+print("iyi/koetue")
