@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poll of the Day</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            margin: 20px;
+        }
+        .poll-box {
+            background-color: #f0f0f0;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px auto;
+            width: 300px;
+        }
+        .poll-question {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 16px;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .button-red {
+            background-color: red;
+        }
+        .button-blue {
+            background-color: blue;
+        }
+        .footer {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+        .footer a {
+            color: #888;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>POLLES</h1>
+        <div class="poll-box">
+            <div class="poll-question">{{ poll['question'] }}</div>
+            <a href="/vote/yes" class="button button-red">Yes</a>
+            <a href="/vote/no" class="button button-blue">No</a>
+        </div>
+        <div class="footer">
+            <span>Member?</span>
+            <a href="#">Login</a> |
+            <a href="#">Sign up</a>
+        </div>
+    </div>
+</body>
+</html>
