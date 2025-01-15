@@ -1,3 +1,3 @@
-#bu ilk pust denemesi
+#bu ilk pust denemesi budur yani
 
 print("abi selam")
