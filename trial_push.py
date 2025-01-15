@@ -1,3 +1,0 @@
-#abiselamabi
-
-print("iyi/koetue")
